@@ -7,11 +7,11 @@ pileline {
                 branch: 'arjun'
             }
         }
-        stage( 'package' ){
+        stage('package'){
             steps{
                 sh 'mvn package'
             }
         }
-        
+
     }
 }
