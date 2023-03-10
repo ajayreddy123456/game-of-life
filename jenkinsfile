@@ -7,11 +7,8 @@ pipeline {
                 branch: 'game'
             }
         }
-        stage ('package') {
-            tools {
-                jdk "JDK_8"
-            }
-            steps {
+        stage ('package') {       
+                steps {
                 sh 'mvn package'
             }
             }
